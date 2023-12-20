@@ -5,47 +5,42 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Projects Info</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+    title="URL Shortener"
+    img="/url-shortener.png"
+    desc="URL Shortener where users can upload their urls and have them already shortened, this is thanks to Base62 encoding. The app uses Ruby on Rails and counts with pagination and copy to clipboard functionalities! It also has a background job to fetch metadata about the URL. You can also see the views of each URL in a certain period of time! "
+    url=""
+    badges={[{ text: "NEW", title: "This is a new project" }, { text: "ROR", title: "This project uses Ruby on Rails" }, 
+            {text: "PENDING", title: "It's in development"}]}
+    />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
+<HorizontalCard
+  title="Blog app"
+  img="/"
+  desc="My own personal blog where I upload everything new I'm learning. It uses PostgreSQL as a database, has a searchbar where you can search by name of blogpost and cover images are uploaded to Amazon S3. I'll be adding more features and upgrading the UI. I'm using render as the hoster so it has a slow load time, be patient 🦥."
+  url="https://learning-blog-7sug.onrender.com/"
+  badges={[{ text: "ROR", title: "This project uses Ruby on Rails" }, 
+  {text: "PRODUCTION", title: "It's in production"}]}
+/>
 
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+<HorizontalCard
+  title="Password Manager"
+  img="/password-manager.png"
+  desc="Web site where users can save and share passwords to other users. You can assign permissions to this users, so they can only view or they can edit your password. The usernames and passwords are encrypted thanks to ActiveRecord Encryption. The UI will be updated."
+  url="#"
+  badges={[{ text: "ROR", title: "This project uses Ruby on Rails" }, 
+  {text: "PENDING", title: "Only UI pending."}]}
+/>
+
+<HorizontalCard
+  title="Go interpreter"
+  img="/go.jpg"
+  desc="An interpreter of monke programming language in Go..."
+  url="#"
+  badges={[{ text: "ROR", title: "This project uses Ruby on Rails" }, 
+  {text: "PENDING", title: "Only UI pending."}]}
+/>
 </BaseLayout>
