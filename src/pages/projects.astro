@@ -5,21 +5,21 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Info</div>
+    <div class="text-3xl w-full font-bold mb-5 text-accent" >Projects Info</div>
   </div>
 
   <HorizontalCard
     title="URL Shortener"
     img="/url-shortener.png"
     desc="URL Shortener where users can upload their urls and have them already shortened, this is thanks to Base62 encoding. The app uses Ruby on Rails and counts with pagination and copy to clipboard functionalities! It also has a background job to fetch metadata about the URL. You can also see the views of each URL in a certain period of time! "
-    url=""
+    url="https://github.com/OsqY/url-shortener"
     badges={[{ text: "NEW", title: "This is a new project" }, { text: "ROR", title: "This project uses Ruby on Rails" }, 
             {text: "PENDING", title: "It's in development"}]}
     />
 
 <HorizontalCard
   title="Blog app"
-  img="/"
+  img="/blog.png"
   desc="My own personal blog where I upload everything new I'm learning. It uses PostgreSQL as a database, has a searchbar where you can search by name of blogpost and cover images are uploaded to Amazon S3. I'll be adding more features and upgrading the UI. I'm using render as the hoster so it has a slow load time, be patient 🦥."
   url="https://learning-blog-7sug.onrender.com/"
   badges={[{ text: "ROR", title: "This project uses Ruby on Rails" }, 
@@ -30,7 +30,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   title="Password Manager"
   img="/password-manager.png"
   desc="Web site where users can save and share passwords to other users. You can assign permissions to this users, so they can only view or they can edit your password. The usernames and passwords are encrypted thanks to ActiveRecord Encryption. The UI will be updated."
-  url="#"
+  url="https://github.com/OsqY/password_manager"
   badges={[{ text: "ROR", title: "This project uses Ruby on Rails" }, 
   {text: "PENDING", title: "Only UI pending."}]}
 />
@@ -39,8 +39,8 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   title="Go interpreter"
   img="/go.jpg"
   desc="An interpreter of monke programming language in Go..."
-  url="#"
-  badges={[{ text: "ROR", title: "This project uses Ruby on Rails" }, 
+  url="https://github.com/OsqY/interpreter"
+  badges={[{ text: "GO", title: "This project is being made in Go." }, 
   {text: "PENDING", title: "Only UI pending."}]}
 />
 </BaseLayout>
